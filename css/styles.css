@@ -31,6 +31,7 @@ body a:hover{
     color:unset;
     text-decoration: none;
 }
+
 body label{margin: 0;}
 .go-right{
     transition: .3s;
@@ -1012,3 +1013,51 @@ body label{margin: 0;}
 }
 /* energie html  */
 
+/* grootzakelijk bubble  */
+.grootzakelijkb--bubble{
+    position: relative;
+    background: #fff;
+    width: 80%;
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+@media (min-width: 992px){
+    .grootzakelijkb--bubble {
+        padding: 2rem 4rem;
+    } 
+}
+.grootzakelijkb--bubble:after {
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4em 4em 0 0;
+    border-color: #fff transparent transparent transparent;
+    top: 15%;
+    right: -4em;
+}
+
+@media (min-width: 992px){
+    .grootzakelijkb--bubble:before, .grootzakelijkb--bubble:after {
+        content: "";
+    } 
+}
+.grootzakelijkb--bubble:before {
+    background: url("../images/health-insurance.png") no-repeat center center;
+    background-size: contain;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    left: 90%;
+    transform: translatex(-50%);
+}
+.grootzakelijkb--agent{
+    max-height: 500px;
+}
+.input_chevron{
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+}
