@@ -616,11 +616,11 @@ body label{margin: 0;}
     transition: all .1s;
 }
 .services--transferplan-right_dropdown[aria-expanded="true"], 
-.services--transferplan-right_dropdown .collapsed{
+.card .services--transferplan-right_dropdown .collapsed{
     padding-bottom:0;
 
 }
-.services--transferplan-right_dropdown:not(.collapsed) .fa-chevron-down{
+.card .services--transferplan-right_dropdown:not(.collapsed) .fa-chevron-down{
     transform: rotate(180deg);
     color: var(--blue);
 }
@@ -744,7 +744,7 @@ body label{margin: 0;}
 /* rating section */
 .rating{
     padding: 1rem 0;
-    
+    margin: 1rem 0;
 }
 .rating--container{
     display: flex;
@@ -794,6 +794,10 @@ body label{margin: 0;}
 }
 .rating--stats_stars{
     color: var(--color-secondary);
+}
+.unrated{
+    filter: grayscale(1);
+    opacity: .8;
 }
 .rating--stats_spec{
     flex:1 1 50%;
