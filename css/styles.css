@@ -2,6 +2,7 @@
 body{
     font-size: 14px;
     box-sizing: border-box;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 @media (min-width: 768px){
     body{
@@ -63,7 +64,7 @@ body label{margin: 0;}
 }
 .ener-btn-primary:hover{
     color: #fff !important;
-    transform: scale(1.01);
+    transform: translateZ(0) scale(1.01);
     box-shadow: 0px 10px 3px -6px #dc8100;
 }
 .ener-btn-primary:hover .go-right, .ener-btn-secondary:hover .go-right{
@@ -80,7 +81,7 @@ body label{margin: 0;}
 }
 .ener-btn-secondary:hover{
     color: #fff !important;
-    transform: scale(1.01);
+    transform: translateZ(0) scale(1.01);
     box-shadow: 0px 1px 1px 0px #978c8cbf;
     backface-visibility: hidden;
 }
@@ -570,14 +571,12 @@ body label{margin: 0;}
     font-weight: 700;
 }
 
-.services--transferplan-right--left .services--transferplan-right_heading, 
-.services--transferplan-right--left .services--transferplan-right--row{
+.services--transferplan-right--left{  
     border-right: unset;
 }
 
 @media (min-width: 992px){
-    .services--transferplan-right--left .services--transferplan-right_heading, 
-    .services--transferplan-right--left .services--transferplan-right--row{
+    .services--transferplan-right--left{
         border-right: 2px solid #000;
     }
 }
@@ -617,15 +616,15 @@ body label{margin: 0;}
     transition: all .1s;
 }
 .services--transferplan-right_dropdown[aria-expanded="true"], 
-.services--transferplan-right_dropdown:not(.collapsed){
-    border-bottom: 0;
+.services--transferplan-right_dropdown .collapsed{
+    padding-bottom:0;
+
 }
-.services--transferplan-right_dropdown[aria-expanded="true"] .fa-chevron-down, 
 .services--transferplan-right_dropdown:not(.collapsed) .fa-chevron-down{
     transform: rotate(180deg);
     color: var(--blue);
-
 }
+
 .services--transferplan-right_dropdown~.show{
     border-top: 0;
     border-bottom: 1px solid var(--color-secondary);
@@ -687,7 +686,7 @@ body label{margin: 0;}
     
 }
 .surprise--stats--details .services--card_icon{
-    transform: scale(.5);
+    transform: translateZ(0) scale(.5);
 }
 .star-icon{
     width: 50%;
@@ -824,7 +823,14 @@ body label{margin: 0;}
 }
 .exclusives--deals--card:hover{
     transform: unset;
-    
+}
+.exclusives--deals--card_icon{
+    transition: .5s;
+    backface-visibility: hidden;
+}
+.exclusives--deals--card_icon:hover{
+    filter: saturate(3);
+    transform: translateZ(0) scale(1.2);
 }
 
 

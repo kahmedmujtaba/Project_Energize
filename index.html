@@ -25,10 +25,10 @@
             <div class="d-flex justify-content-start">
               <ul class="d-flex">
                 <li>
-                  <a href="#">Particulier</a>
+                  <a href="#" class="color-primary">Particulier</a>
                 </li>
                 <li >
-                  <a href="#">Zakelijk </a>
+                  <a href="pages/zakelijk.html">Zakelijk </a>
                 </li>
                 <li >
                   <a href="pages/grootzakelijk.html">Grootzakelijk </a>
@@ -773,85 +773,115 @@
               <div class="services--transferplan-right--left flex-column">
                 <span class="services--transferplan-right_heading color-primary">Overstappenplan?</span>
 
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                    <i class="fa fa-check " aria-hidden="true"></i>
-                    <div class=" d-flex flex-column">
-                        <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#stap1">
-                          Stap 1
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="stap1" class="collapse services--transferplan-right_dropdown">
-                          <p>
-                            Meld je aan voor een dienst die het best bij jou past en vink aan 'overstapservice'.
-                          </p>
+                <div id="accordion">
+                    <div class="card bg-transparent border-0">
+                      <div class="services--transferplan-right--row"  id="headingOne">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-check " aria-hidden="true"></i>
+                            <button data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                              <strong class="mb-0">Stap 1</strong>
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
                         </div>
-                    </div>
-                </span>
-
-                                
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="d-flex flex-column">
-                    <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#Stap2">
-                        Stap 2
-                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </button>
-                      <div id="Stap2" class="collapse services--transferplan-right_dropdown">
-                         <p>Demo text, any text can be replaced with this one</p> 
-                      </div>
-                    </div>
-                  
-                </span>
-                
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <div class=" d-flex flex-column">
-                      <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#Stap3">
-                          Stap 3
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="Stap3" class="collapse services--transferplan-right_dropdown">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                    
-                </span>
-                
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <div class=" d-flex flex-column">
-                      <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#Stap4">
-                          Stap 4
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="Stap4" class="collapse services--transferplan-right_dropdown">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        <div id="collapseOne" class="ml-3 collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                          <div class="services--transferplan-right_dropdown p-0">
+                            <div class="card-body">
+                              <p>
+                                Meld je aan voor een dienst die het best bij jou past en vink aan 'overstapservice'.
+                              </p>
+                            </div>
+                          </div> 
                         </div>
                       </div>
-                    
-                </span>
-
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <div class=" d-flex flex-column">
-
-                      <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#Stap5">
-                          Stap 5
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                        </button>
-                        <div id="Stap5" class="collapse services--transferplan-right_dropdown">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-
                     </div>
-                    
-                </span>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingTwo">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Stap 2</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseTwo" class="ml-3 collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingThree">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Stap 3</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseThree" class="ml-3 collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingFour">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Stap 4</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseFour" class="ml-3 collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingFive">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Stap 5</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseFive" class="ml-3 collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+                </div>
+
+ 
+                
 
               </div>
             </div>
@@ -859,92 +889,114 @@
             <div class="p-0 flex-grow-1 d-flex justify-content-center text-center">
               <div class="services--transferplan-right--right flex-column">
                 <span class="services--transferplan-right_heading color-primary">Veel gestelde vragen?</span>
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="d-flex flex-column">
-                      <button type="button" class="services--transferplan-right_dropdown font-weight-bold collapsed" data-toggle="collapse" data-target="#stapEnergie">
-                          Energie
-                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                      </button>
-                        <div id="stapEnergie" class="collapse services--transferplan-right_dropdown">
-                           <p>Demo text, any text can be replaced with this one</p> 
+
+                <div id="Veelgestelde">
+                    <div class="card bg-transparent border-0">
+                      <div class="services--transferplan-right--row"  id="headingEnergie">
+                        <div class="d-flex align-items-center">
+                            <i class="fa fa-check " aria-hidden="true"></i>
+                            <button data-toggle="collapse" data-target="#collapseEnergie" aria-expanded="true" aria-controls="collapseOne" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                              <strong class="mb-0">Energie</strong>
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <div id="collapseEnergie" class="ml-3 collapse" aria-labelledby="headingEnergie" data-parent="#Veelgestelde">
+                          <div class=" services--transferplan-right_dropdown p-0">
+                            <div class="card-body ">
+                              <p>
+                                Meld je aan voor een dienst die het best bij jou past en vink aan 'overstapservice'.
+                              </p>
+                            </div>
+                          </div> 
                         </div>
                       </div>
-                  <div class="dropdown ">
-                    <a class="btn services--transferplan-right_dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Energie
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Internet & TV</a>
-                      <a class="dropdown-item" href="#">Smartphone</a>
-                      <a class="dropdown-item" href="#">Shop</a>
                     </div>
-                  </div>
-                </span>
-                
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="dropdown ">
-                    <a class="btn services--transferplan-right_dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Internet & TV
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Stap 1</a>
-                      <a class="dropdown-item" href="#">Stap 3</a>
-                      <a class="dropdown-item" href="#">Stap 4</a>
-                    </div>
-                  </div>
-                </span>
-                
-                <span class="services--transferplan-right--row d-flex align-items-center">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="dropdown  ">
-                    <a class="btn services--transferplan-right_dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Smartphone
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Stap 1</a>
-                      <a class="dropdown-item" href="#">Stap 2</a>
-                      <a class="dropdown-item" href="#">Stap 4</a>
-                    </div>
-                  </div>
-                </span>
-                
-                <span class="services--transferplan-right--row d-flex align-items-center ">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="dropdown  ">
-                    <a class="btn services--transferplan-right_dropdown" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Shop
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Stap 1</a>
-                      <a class="dropdown-item" href="#">Stap 2</a>
-                      <a class="dropdown-item" href="#">Stap 3</a>
-                    </div>
-                  </div>
-                </span>
 
-                <span class="services--transferplan-right--row d-flex align-items-center ">
-                  <i class="fa fa-check" aria-hidden="true"></i>
-                  <div class="dropdown  ">
-                    <a class="btn services--transferplan-right_dropdown px-2" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Energise Exclusives
-                      <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                    </a>
-                    <div class="dropdown-menu w-100" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">Internet & TV</a>
-                      <a class="dropdown-item" href="#">Smartphone</a>
-                      <a class="dropdown-item" href="#">Shop</a>
-                      <a class="dropdown-item" href="#">Energise Exclusives</a>
-
-
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingInternetTV">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseInternetTV" aria-expanded="true" aria-controls="collapseInternetTV" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Internet & TV</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseInternetTV" class="ml-3 collapse" aria-labelledby="headingInternetTV" data-parent="#Veelgestelde">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
                     </div>
-                  </div>
-                </span>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingSmartphone">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseSmartphone" aria-expanded="true" aria-controls="collapseSmartphone" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Smartphone</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseSmartphone" class="ml-3 collapse" aria-labelledby="headingSmartphone" data-parent="#Veelgestelde">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingShop">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseShop" aria-expanded="true" aria-controls="collapseShop" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed" id="headingOne">
+                                <strong class="mb-0">Stap 4</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseShop" class="ml-3 collapse" aria-labelledby="headingShop" data-parent="#Veelgestelde">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+
+                    <div class="card bg-transparent border-0">
+                        <div class="services--transferplan-right--row" id="headingEnergiseExclusives">
+                          <div class="d-flex align-items-center" >
+                              <i class="fa fa-check " aria-hidden="true"></i>
+                              <button data-toggle="collapse" data-target="#collapseEnergiseExclusives" aria-expanded="true" aria-controls="collapseEnergiseExclusives" class="card-header card-header services--transferplan-right_dropdown font-weight-bold bg-transparent collapsed px-2" id="headingOne">
+                                <strong class="mb-0">Energise Exclusives</strong>
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                              </button>
+                          </div>
+                          <div id="collapseEnergiseExclusives" class="ml-3 collapse" aria-labelledby="headingEnergiseExclusives" data-parent="#Veelgestelde">
+                            <div class=" services--transferplan-right_dropdown p-0">
+                              <div class="card-body ">
+                                <p>
+                                  Demo text, any text can be replaced with this one
+                                </p>
+                              </div>
+                            </div> 
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                
                
 
               </div>
@@ -1277,60 +1329,63 @@
     
     <div class="exclusives--deals d-flex flex-column flex-lg-row justify-content-between">
       
-      <div class="exclusives--deals--card services--card col-12 col-lg-3 ">
-        <span class="exclusives--deals--card_heading h1 text-uppercase">3 Dagen Deals</span>
-        <span class="img-fluid">
-          <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
-        </span>
-        
-        <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
-          <p>Nog...</p>
-          <p>2 dagen | 3u | 10sec </p>
-        </span>
-        
+      <div class="exclusives--deals--card services--card col-12 col-lg-3">
+        <a href="#" class="d-flex flex-column">
+          <span class="exclusives--deals--card_heading h1 text-uppercase">3 Dagen Deals</span>  
+          <span class="img-fluid">
+            <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
+          </span>
+          
+          <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
+            <p>Nog...</p>
+            <p>2 dagen | 3u | 10sec </p>
+          </span>
+        </a>
         <span class="color-primary d-flex w-100 justify-content-around mt-3">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <i class="fas fa-desktop" aria-hidden="true"></i>
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fas fa-desktop" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
         </span>
       </div>
       
       <div class="exclusives--deals--card services--card col-12 col-lg-3">
-        <span class="exclusives--deals--card_heading h1 text-uppercase">Week Deals</span>
-        <span class="img-fluid">
-          <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
-        </span>
-        
-        <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
-          <p>Nog...</p>
-          <p>4 dagen | 12u | 10sec </p>
-        </span>
-        
+          <a href="#" class="d-flex flex-column">
+            <span class="exclusives--deals--card_heading h1 text-uppercase">Week Deals</span>
+            <span class="img-fluid">
+              <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
+            </span>
+            
+            <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
+              <p>Nog...</p>
+              <p>4 dagen | 12u | 10sec </p>
+            </span>
+        </a>
         <span class="color-primary d-flex w-100 justify-content-around mt-3">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <i class="fas fa-desktop" aria-hidden="true"></i>
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fas fa-desktop" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
         </span>
       </div>
       
       <div class="exclusives--deals--card services--card col-12 col-lg-3">
-        <span class="exclusives--deals--card_heading h1 text-uppercase">Maand Deals</span>
-        <span class="img-fluid">
-          <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
-        </span>
-        
-        <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
-          <p>Nog...</p>
-          <p>25 dagen | 31u | 18sec </p>
-        </span>
-        
+          <a href="#" class="d-flex flex-column">
+            <span class="exclusives--deals--card_heading h1 text-uppercase">Maand Deals</span>
+            <span class="img-fluid">
+              <img src="images/image_placeholder.png" alt="Placeholder" class="services--card_icon">
+            </span>
+            
+            <span class="exclusives--deals--card_subhead text-center font-weight-bold color-primary">
+              <p>Nog...</p>
+              <p>25 dagen | 31u | 18sec </p>
+            </span>
+        </a>
         <span class="color-primary d-flex w-100 justify-content-around mt-3">
-          <i class="fa fa-home" aria-hidden="true"></i>
-          <i class="fas fa-desktop" aria-hidden="true"></i>
-          <i class="fa fa-mobile" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-home" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fas fa-desktop" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-mobile" aria-hidden="true"></i></a>
+            <a href="" class="exclusives--deals--card_icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
         </span>
       </div>
       
